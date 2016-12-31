@@ -1,0 +1,55 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+    
+    <div class="container mainTxt">
+	<div class="space"></div>
+	<div class="row">
+	    <div class="col-xs-10 col-md-offset-4 col-md-4 leftTxt">
+		<p class="animate1">write <span class="yellowTxt">code</span></p>
+		<p class="animate2"><span class="yellowTxt">every</span>where :)
+		</p>	    
+	    </div>
+	    <div class="col-xs-2 col-md-1">
+		<span class="blink">|</span>
+	    </div>
+	</div>
+
+	<div class="space"></div>
+	
+	<div class="descDiv row">
+	    <div class="col-xs-12 col-md-offset-4">
+		<p class="description">Оставь свой <span class="yellowTxt">email</span> и </p>
+		<p class="description">в <span class="yellowTxt">Новом году</span> тебя ждёт подарок</p>
+
+	    </div>
+	</div>
+
+	<div class="space"></div>
+	
+	<div class="row">
+	    <div class="col-xs-12 col-md-offset-4 col-md-4">
+		<input class="emailTxt" id="email" name="" type="text" value=""/>
+	    </div>
+	</div>
+
+	<div class="space"></div>
+	
+	<div class="row">
+	    <div class="col-xs-12 col-md-offset-4 col-md-4 want">
+		<input type="button" id="btn" name="btn" value="Хочу инвайт!" class="btn btnWant"/>
+	    </div>
+	</div>
+
+    </div>
+
+    }
